@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}
+ Welcome!
+{% endblock %}
+
+{% block content %}
+
+<h1 class ="home-welcome">Welcome to the typing test!</h1>
+
+<p class ="home-info">On this site you may take a 30 second typing test, after which your results will be added to the database.
+    You will then be able view your 10 best results at "your top 10 tests" or even compare your results to the best at "global leaderboard"
+</p>
+
+<div class="text-center mt-4">
+    <a href="/test" class="btn btn-warning btn-lg">Take the Test!</a>
+</div>
+{% endblock %}

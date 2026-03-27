@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+
+{% block title %} Results {%  endblock %}
+
+{%  block content %}
+
+<h1>You've complated the test!</h1>
+<h2>WPM: {{  wpm }}</h2>
+<h2>accuracy: {{  accuracy }}</h2>
+<h2> adjusted_wpm: {{ adjusted_wpm }}</h2>
+{%  endblock %}

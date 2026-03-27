@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{%  block title %} Typing Test {%  endblock %}
+
+{%  block content %}
+
+
+<form id="typing-form" action="/test" method="POST" class="center">
+    <div id="test-text" class=>{{ text }}</div>
+    <textarea class="center" id="typing-area" name="typed_text" rows="5" cols="80" autofocus></textarea>
+    <div class="center">Time left: <span id="timer"></span> seconds</div>
+</form>
+<script src="{{ url_for('static', filename='test.js') }}"></script>
+
+{%  endblock %}

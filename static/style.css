@@ -1,0 +1,50 @@
+.navbar-nav .nav-link {
+    color: #ffc107 !important; /* Bootstrap warning yellow */
+}
+.navbar-nav .nav-link:hover {
+    color: #ffda6b !important;
+}
+
+.navbar-brand {
+    color: #ffc107 !important; /* Bootstrap warning yellow */
+}
+
+.navbar-brand:hover {
+    color: #ffda6b !important; /* lighter on hover */
+}
+
+body {
+    background-color: #0B3D91;
+    color: #f8f9fa;
+}
+
+.home-info {
+    text-align: center;        /* Center paragraph */
+    color: #f8f9fa;            /* Light text (works with ocean blue backgrounds) */
+    max-width: 700px;          /* Limit line length for readability */
+    margin: 1.5rem auto;       /* Center horizontally with spacing */
+    line-height: 1.6;          /* Easier to read */
+    font-size: 1.4rem;
+}
+
+.home-welcome {
+    text-align: center;        /* Center welcome */
+    color: #3CE6B5;            /* mint green (works with light and ocean blue) */
+    max-width: 700px;          /* Limit line length for readability */
+    margin: 1.5rem auto;       /* Center horizontally with spacing */
+    line-height: 1.6;          /* Easier to read */
+    font-size: 3.2rem;
+}
+
+.center {
+    display: block;   /* works for buttons, images, any block-level element */
+    margin: 0 auto;   /* horizontally centers the element */
+    text-align: center; /* optional, if you have inline content inside */
+}
+
+#test-text {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 1.5;
+    font-weight: bold;
+}

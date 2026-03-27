@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Apology
+{% endblock %}
+
+{% block content %}
+    <!-- https://memegen.link/ -->
+    <!-- https://www.pngkey.com/png/detail/283-2832639_angry-face-meme-png.png -->
+    <img alt="{{ top }}" class="border img-fluid" src="https://api.memegen.link/images/custom/{{ top | urlencode }}/{{ bottom | urlencode }}.jpg?background=https://www.pngkey.com/png/detail/283-2832639_angry-face-meme-png.png" title="{{ top }}">
+{% endblock %}

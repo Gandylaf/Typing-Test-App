@@ -1,0 +1,42 @@
+{%  extends "layout.html" %}
+
+
+{%  block title %} your top 10 results{%  endblock %}
+
+
+{%  block content %}
+
+
+
+    {% if user_results %}
+        <h1 class="home-welcome">Top 10</h1>
+        <table class="table table-dark">
+            <thead>
+                <tr>
+                    <th scope="col">User</th>
+                    <th scope="col">WPM</th>
+                    <th scope="col">Accuracy</th>
+                    <th scope="col">Adjusted_wpm</th>
+                    <th scope="col">Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                {%  for  result in user_results %}
+                    <tr>
+                        <td>{{ result["username"] }}</td>
+                        <td>{{ result["wpm"] }}</td>
+                        <td>{{ result["Accuracy"] }}</td>
+                        <td>{{ result["Adjusted_wpm"] }}</td>
+                        <td class="utc-time">{{ result["date_of_entry"] }}-UTC</td>
+                    </tr>
+                {%  endfor %}
+            </tbody>
+        </table>
+
+    {%  else %}
+        <h1> You haven't taken any tests! start one now!</h1>
+        <div class="text-center mt-4">
+            <a href="/test" class="btn btn-warning btn-lg">Take the Test!</a>
+        </div>
+    {%  endif %}
+{% endblock %}
