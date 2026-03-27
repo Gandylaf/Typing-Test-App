@@ -229,3 +229,6 @@ def change():
         db.commit()
         cur.close()
     return redirect("/")
+
+if __name__ == "__main__":
+    app.run()
