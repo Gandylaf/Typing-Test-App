@@ -1,6 +1,6 @@
 # Typing Test
-#### Video Demo: <INSERT VIDEO URL HERE>
-#### Description:
+#### Video Demo: https://www.youtube.com/watch?v=B8Vdy_XJEPI
+This app is also deployed on render: https://typing-test-app-kp53.onrender.com
 
 ### Overview
 This app is a standard typing test website. Allowing users to register an account and then take a 30 second typing test. I created this website so anyone could compare typing results against their friends, the world, or themselves. The app has an "ocean blue" theme to make the website easier on the eyes.
